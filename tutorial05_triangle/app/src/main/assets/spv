@@ -1,0 +1,5 @@
+#!/bin/sh
+source ~/.profile
+
+./glslc -c --target-env=vulkan --target-spv=spv1.0 tri.vert -o tri.vert.spv
+./glslc -c --target-env=vulkan --target-spv=spv1.0 tri.frag -o tri.frag.spv
